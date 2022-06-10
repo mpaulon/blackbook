@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "blackbook"
+version = "1.0.0"
+description = "Apply pep8 style to jupyter notebook using black"
+readme = "README.md"
+license = "MIT"
+
+authors = [
+    "Michaël PAULON <michael@paulon.org>"
+]
+
+packages = [
+]
+
+include = [ 
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+black = "*"
+
+[tool.poetry.urls]
+repository = "https://github.com/mpaulon/blackbook"
+
+[tool.poetry.scripts]
+blackbook = "blackbook.main:cli"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
